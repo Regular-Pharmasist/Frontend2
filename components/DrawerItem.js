@@ -19,7 +19,7 @@ class DrawerItem extends React.Component {
             color={focused ? "white" : argonTheme.COLORS.PRIMARY}
           />
         );
-      case "복용기록확인":
+      case "복용 기록 확인":
         return (
           <Icon
             name="map-big"
@@ -28,7 +28,7 @@ class DrawerItem extends React.Component {
             color={focused ? "white" : argonTheme.COLORS.ERROR}
           />
         );
-      case "복용알람":
+      case "복용 알람":
         return (
           <Icon
             name="spaceship"
@@ -37,7 +37,7 @@ class DrawerItem extends React.Component {
             color={focused ? "white" : argonTheme.COLORS.PRIMARY}
           />
         );
-      case "중독위험도":
+      case "중독 위험도":
         return (
           <Icon
             name="chart-pie-35"

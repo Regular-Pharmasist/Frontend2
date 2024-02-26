@@ -17,6 +17,7 @@ import { Card } from "../components";
 import articles from "../constants/articles";
 import { Camera } from "expo-camera";
 import ImagePickerComponent from "../components/ImagePickerComponent";
+import Images from "../constants/Images";
 const Stack = createStackNavigator();
 const { width, height } = Dimensions.get("screen");
 
@@ -253,7 +254,9 @@ class Home extends React.Component {
         <Stack.Screen
           name="Home"
           options={{
-            title: "단골약사",
+            headerTitle: () => (
+              <Image style={styles.logo} source={Images.Logo} />
+            ),
           }}
         >
           {() => (
